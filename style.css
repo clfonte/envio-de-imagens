@@ -1,0 +1,10 @@
+h1, h2 {
+    margin: 9%;
+    font: tahoma, bold;
+    color: rgb(35, 181, 201);
+}
+
+label {
+    font-weight: bold;
+    color: lightslategray;
+}

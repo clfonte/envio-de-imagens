@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fomulário</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
@@ -22,8 +23,9 @@
 
         <button type="submit" class="btn btn-outline-info">Enviar</button>
     </form>
+    <br>
 
-    <h2>Imagens cadastradas</h2>
+    <h2> Imagens cadastradas</h2>
 
     <div class="row">
 
@@ -43,11 +45,13 @@
                 $arquivop = 'arquivos/'. $arquivo . 'p.jpg';
                 $arquivog = 'arquivos/'. $arquivo . 'g.jpg';
                 
+                //echo $arquivog. '<br>';
+
                 echo '<div class="col-4">
                         <a href="'.$arquivog.'">
                             <img src="'.$arquivop.'" alt="'.$descricao.'" title="'.$descricao.'" class="w-100">
                         </a>
-                    </div>';
+                    </div>'; 
             }
         ?>
 
